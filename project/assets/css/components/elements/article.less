@@ -1,0 +1,77 @@
+@import "../base/variables.less";
+
+article {
+    border-left: 1px solid @color-border;
+	margin-bottom: 50px;
+    padding: 10px;
+	
+	&:hover {
+    	border-color: @color-border-hover;
+	}
+	
+	h1 {
+		color: @color-subtitle-primary;
+		font-size: @font-size-subtitle-primary;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		padding-left: 10px;
+	}
+	
+	h2 {
+		color: @color-subtitle-primary;
+		font-size: @font-size-subtitle-primary;
+		margin-bottom: 5px;
+		margin-top: 0px;
+	}
+	
+	h3 {
+		color: @color-subtitle-secondary;
+		margin-bottom: 5px;
+		margin-top: 0px;
+	}
+	
+	p {
+		margin-bottom: 10px;
+		padding-left: 30px;
+
+		&:last-child {
+			padding-left: 30px;
+			margin-bottom: 0;
+		}
+	}
+	
+	blockquote {
+		border-left: 3px solid @color-border;
+		margin-left: 30px;
+		padding: 10px 0;
+
+		&:hover {
+			border-left: 3px solid @color-border-hover;
+		}
+		
+		h2,
+		h3,
+		small {
+			padding-left: 30px;
+		}
+		
+		small {
+			font-size: 70%;
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		
+		li {
+			font-size: @font-size-base;
+			padding-left: 40px;
+			
+			small {
+				display: inline;
+				font-size: 90%;
+				padding-left: 0;
+			}
+		}
+	}
+}

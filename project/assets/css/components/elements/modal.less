@@ -1,0 +1,63 @@
+@import "../base/variables.less";
+
+.modal.in .modal-dialog,
+.modal.fade .modal-dialog {
+    left: 0;
+    margin-top: -90px!important;
+    max-width: 400px;
+    min-width: 300px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.modal .modal-header {
+    border-bottom: 0;
+}
+
+.modal .modal-footer {
+    border-top: 0;
+    margin-top: 25px;
+}
+
+.modal .modal-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    height: 118px;
+}
+
+.modal .close,
+.modal .close:focus,
+.modal .close:hover {
+    color: @color-icon;
+    font-size: 30px;
+	opacity: 1;
+    outline: 0;
+    position: absolute;
+    right: 10px;
+    text-shadow: none;
+    top: 0;
+}
+
+.modal .modal-dialog {
+    margin: -75px auto;
+}
+
+.modal .modal-body {
+	font-size: 20px;
+	text-align: center;
+	color: @color-text;
+}
+
+.modal .modal-body i {
+	margin-right: 10px;
+}
+
+
+@media(max-width: 416px) {
+    .modal {
+        margin: 10px;
+    }
+}

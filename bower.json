@@ -1,0 +1,13 @@
+{
+  "name": "marjoel.com",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0",
+    "roboto-fontface": "~0.4.3",
+    "less": "~2.5.3",
+    "sanitize-css": "~3.0.0",
+    "animate.css": "~3.5.1"
+  }
+}

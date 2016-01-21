@@ -1,0 +1,46 @@
+@import "../base/variables.less";
+
+#profile {
+    position: relative;
+    text-align: center;
+}
+
+#profile .content {
+	padding-right: 0;
+	position: fixed;
+	width: 33.33333333%;
+}
+
+#profile .pipe {
+	padding: 0 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 839px) {
+	#profile h1 {
+		font-size: 31px;
+	}
+	
+	#profile h2 {
+		font-size: 17.2px;
+	}
+}
+
+@media screen and (max-width: 337px) {
+	#profile .social li {
+		margin-left: 9px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 952px) {
+	#profile .social li {
+		margin-left: 8px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#profile .content {
+		padding-right: 20px;
+		position: relative;
+		width: 100%;
+	}
+}
