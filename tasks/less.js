@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 			options: {
 				compress: true,
 				cleancss: true,
-				yuicompress: true,
+				yuicompress: false,
 				optimization: 2
 			},
 			files: {
