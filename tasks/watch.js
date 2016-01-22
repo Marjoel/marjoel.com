@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	grunt.config('watch', {
 		styles: {
 			files: ['project/assets/css/components/**/*.less'],
-			tasks: ['less:build','replace:build'],
+			tasks: ['less:build','replace:build', 'purifycss:build'],
 			options: {
 				nospawn: true
 			}
