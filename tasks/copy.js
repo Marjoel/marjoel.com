@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 			files: [{
 				expand: true,
 				cwd: 'project/',
-				src : ['index.html'],
+				src : ['index.html','.htaccess'],
 				dest: 'dist/'
 			}]
 		},

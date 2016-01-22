@@ -13,9 +13,8 @@ module.exports = function(grunt) {
 				'dist/assets/css/styles.min.css': [
 					'project/assets/bower_components/sanitize-css/dist/sanitize.min.css',
 					'project/assets/bower_components/bootstrap/less/bootstrap.less',
-					'project/assets/bower_components/animate.css/animate.min.css',
 					'project/assets/bower_components/font-awesome/css/font-awesome.min.css',
-					'project/assets/bower_components/roboto-fontface/css/roboto-fontface.css',
+					'project/assets/bower_components/roboto-fontface/css/roboto-fontface.less',
 					'project/assets/css/components/base/variables.less',
 					'project/assets/css/components/base/base.less',
 					'project/assets/css/components/elements/*.less',
