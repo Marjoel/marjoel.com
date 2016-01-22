@@ -19,12 +19,6 @@ module.exports = function(grunt) {
 			},
 			{
 				expand: true,
-				cwd: 'project/assets/images/',
-				src : ['*.*'],
-				dest: 'dist/assets/images/'
-			},
-			{
-				expand: true,
 				cwd: 'project/assets/bower_components/font-awesome/fonts',
 				src : ['*.*'],
 				dest: 'dist/assets/fonts/font-awesome/'
