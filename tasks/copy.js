@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 			files: [{
 				expand: true,
 				cwd: 'project/',
-				src : ['index.html','.htaccess'],
+				src : ['index.html'],
 				dest: 'dist/'
 			}]
 		},
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 			files: [{
 				expand: true,
 				cwd: 'project/',
-				src : ['index.html'],
+				src : ['index.html','.htaccess','robots.txt'],
 				dest: 'dist/'
 			},
 			{
