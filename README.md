@@ -1,4 +1,6 @@
-# marjoel.com
+# <a href="http://www.marjoel.com/">Marjoel's Website</a>
+
+<a href="http://deploybot.com"><img src="https://marjoel.deploybot.com/badge/66802254081882/61535.svg" alt="Deployment status from DeployBot"></a>
 
 1. git clone https://github.com/marjoel/marjoel.com
 2. npm install
