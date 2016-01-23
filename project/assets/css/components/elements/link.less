@@ -2,19 +2,22 @@
 
 a {
 	opacity: 0.80;
-}
-
-a,
-a:active,
-a:visited,
-a:focus,
-a:hover {
 	color: @color-link;
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
-}
-
-a:hover {
-	opacity: 1;
+	
+	&:active,
+	&:visited,
+	&:focus,
+	&:hover {
+		color: @color-link;
+		cursor: pointer;
+		outline: none;
+		text-decoration: none;
+	}
+	
+	&:hover {
+		opacity: 1;
+	}
 }
