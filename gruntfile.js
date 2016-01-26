@@ -3,8 +3,6 @@ module.exports = function(grunt) {
 	
     grunt.loadTasks('./tasks');
 	
-	grunt.registerTask('dev', ['concurrent:dev']);
-	
     grunt.registerTask	('prod',
 							['clean:build',
 								'less:build',
@@ -14,7 +12,12 @@ module.exports = function(grunt) {
 								'replace:build',
 								'htmlmin:build',
 								'purifycss:build', 
+								'csscomb:build',
 								'cssmin:build' // using this because minify of purifycss is not working
 							]
 						);
+	
+	grunt.registerTask('dev', ['concurrent:dev']);
+	
+	grunt.registerTask('start', ['prod','connect:server:keepalive']);
 };

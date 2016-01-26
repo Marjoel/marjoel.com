@@ -5,9 +5,8 @@
 1. git clone https://github.com/marjoel/marjoel.com
 2. npm install
 3. bower install
-4. grunt prod
-5. grunt dev
-6. npm start
-7. http://localhost:1992
+4. grunt start (terminal 1)
+5. grunt dev (terminal 2)
+6. http://localhost:1992
 
 **See the website**: <a href="http://www.marjoel.com/">http://www.marjoel.com/</a>
