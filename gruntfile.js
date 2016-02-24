@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     'use strict';
 	
-    grunt.loadTasks('./tasks');
+    grunt.loadTasks('tasks/');
 	
     grunt.registerTask	('prod',
 							['clean:build',
