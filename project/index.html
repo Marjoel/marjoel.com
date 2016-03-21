@@ -21,7 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="/assets/css/styles.min.css" />
 	</head>
 
-	<body itemscope itemtype="http://schema.org/Person">
+	<body itemscope itemtype="http://schema.org/Person http://data-vocabulary.org/Person">
 		<section id="profile" class="col-xs-12 col-sm-4 col-md-4">
 			<div class="row">
 				<div class="content"> 
@@ -31,10 +31,10 @@
 
 					<div class="information animated fadeIn">
 						<h1 itemprop="name">Marjoel Moreira</h1>
-						<h2>Front-End Software Engineer</h2>
+						<h2 itemprop="title">Front-End Software Engineer</h2>
 						<p><span itemprop="nationality">Brazilian</span>, Single, 23 years old</p>
 						<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-							<span itemprop="addressLocality">São Paulo</span> / <span itemprop="addressRegion">SP</span> - Brazil
+							<span itemprop="addressLocality locality">São Paulo</span> / <span itemprop="addressRegion region">SP</span> - Brazil
 						</p>
 					</div>
 
@@ -47,6 +47,7 @@
 							<li><a data-toggle="modal" data-target="#linkedin"><i class="fa fa-linkedin"></i></a></li>
 							<li><a data-toggle="modal" data-target="#twitter"><i class="fa fa-twitter"></i></a></li>
 							<li><a data-toggle="modal" data-target="#github"><i class="fa fa-github-alt"></i></a></li>
+							<li class="hide"><a href="https://plus.google.com/111081285350000911385" rel="author">Google Plus</a></li>
 						</ul>
 					</nav>
 

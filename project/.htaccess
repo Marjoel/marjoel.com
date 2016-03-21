@@ -7,15 +7,8 @@
 	ExpiresDefault A2592000
 </FilesMatch>
 
-rewritecond %{http_host} ^marjoel.com [NC]
-rewriterule ^(.*)$ http://www.marjoel.com/$1 [r=301,NC]
-
 <IfModule mod_rewrite.c> 
-	Options +FollowSymlinks
 	RewriteEngine On
-	RewriteBase /
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteCond %{REQUEST_FILENAME}.php -f
-	RewriteRule ^(.+)$ /$1.php [L,QSA]
+	RewriteCond %{HTTPS} !=on
+	RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule> 
