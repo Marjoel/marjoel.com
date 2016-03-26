@@ -4,55 +4,57 @@
     position: relative;
     text-align: center;
 	
+	h1 {
+		@media screen and (min-width: 768px) and (max-width: 839px) {
+			font-size: 31px;
+		}
+	}
+	
+	h2 {
+		@media screen and (min-width: 768px) and (max-width: 839px) {
+			font-size: 17.2px;
+		}
+	}
+	
 	.content {
 		padding-right: 0;
 		position: fixed;
 		width: 33.33333333%;
+		
+		@media screen and (max-width: 767px) {
+			padding-right: 20px;
+			position: relative;
+			width: 100%;
+		}
 	}
 	
 	.pipe {
 		padding: 0 5px;
 	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 839px) {
-	#profile {
-		h1 {
-			font-size: 31px;
-		}
-		
-		h2 {
-			font-size: 17.2px;
-		}
-	}
-}
-
-@media screen and (max-width: 337px) {
-	#profile {
-		.social {
-			li {
+	
+	.social {
+		li {
+			@media screen and (max-width: 337px) {
 				margin-left: 9px;
 			}
-		}
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 952px) {
-	#profile {
-		.social {
-			li {
+			
+			@media screen and (min-width: 768px) and (max-width: 952px) {
 				margin-left: 8px;
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 767px) {
+.pt {
 	#profile {
-		.content {
-			padding-right: 20px;
-			position: relative;
-			width: 100%;
+		h2 {
+			@media screen and (min-width: 840px) and (max-width: 874px) {
+				font-size: 17px;
+			}
+			
+			@media screen and (min-width: 768px) and (max-width: 839px) {
+				font-size: 15px;
+			}
 		}
 	}
 }

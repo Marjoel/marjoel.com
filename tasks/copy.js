@@ -2,11 +2,11 @@ module.exports = function(grunt) {
     'use strict';
 
 	grunt.config('copy', {
-		build_index: {
+		build_html: {
 			files: [{
 				expand: true,
 				cwd: 'project/',
-				src : ['index.html'],
+				src : ['*.html'],
 				dest: 'dist/'
 			}]
 		},
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 			files: [{
 				expand: true,
 				cwd: 'project/',
-				src : ['index.html','.htaccess','robots.txt'],
+				src : ['*.html','.htaccess','robots.txt'],
 				dest: 'dist/'
 			},
 			{

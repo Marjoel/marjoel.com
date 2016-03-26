@@ -1,14 +1,46 @@
-<ifmodule mod_deflate.c>
+# compress the files before sending to browser
+<IfModule mod_deflate.c>
 	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript font/opentype font/truetype application/x-font-ttf application/x-font-woff 
 </ifmodule>
 
-<FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css|ttf|woff|woff2|html)$">
+<IfModule mod_headers.c>
+	<FilesMatch ".(js|css|xml|gz|html)$">
+		Header append Vary: Accept-Encoding
+	</FilesMatch>
+</IfModule>
+
+# set expires date to files
+<FilesMatch "(?i)^.*\.(ico|svg|jpg|jpeg|png|gif|js|css|ttf|woff|woff2|html)$">
 	ExpiresActive On
 	ExpiresDefault A2592000
 </FilesMatch>
 
-<IfModule mod_rewrite.c> 
-	RewriteEngine On
+# block access to directories
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# block access to these files
+<filesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+	Order Allow,Deny
+	Deny from all
+</filesMatch>
+
+# route
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+    RewriteEngine On
+	
+	# force https 
 	RewriteCond %{HTTPS} !=on
 	RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-</IfModule> 
+	
+	#errors
+	ErrorDocument 404 					/
+	
+	#index
+	DirectoryIndex						/
+	
+	# portuguese version
+	RewriteRule ^pt 					/portuguese.html
+</IfModule>

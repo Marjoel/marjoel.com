@@ -1,11 +1,15 @@
 @import "../base/variables.less";
 
 .modal {
+	@media(max-width: 416px) {
+		margin: 10px;
+	}
+	
 	&.in,
 	&.fade {
 		.modal-dialog {
 			left: 0;
-			margin-top: -90px!important;
+			margin-top: -90px;
 			max-width: 400px;
 			min-width: 300px;
 			position: absolute;
@@ -65,13 +69,13 @@
 		
 		i {
 			margin-right: 10px;
+			
+			&.fa-external-link {
+				font-size: 14px;
+				margin-left: 10px;
+				position: relative;
+    			top: -2px;
+			}
 		}
 	}
-}
-
-
-@media(max-width: 416px) {
-    .modal {
-        margin: 10px;
-    }
 }

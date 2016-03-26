@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
 	grunt.config('purifycss', {
     	build: {
-			src: ['dist/index.html', 'project/assets/bower_components/bootstrap/js/modal.js'],
+			src: ['dist/*.html', 'project/assets/bower_components/bootstrap/js/modal.js'],
 			css: ['dist/assets/css/styles.min.css'],
 			dest: 'dist/assets/css/styles.min.css'
 		}

@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 	
     grunt.loadTasks('tasks/');
 	
-    grunt.registerTask	('prod',
+    grunt.registerTask	('build',
 							['clean:build',
 								'less:build',
 								'uglify:build',
@@ -19,5 +19,5 @@ module.exports = function(grunt) {
 	
 	grunt.registerTask('dev', ['concurrent:dev']);
 	
-	grunt.registerTask('start', ['prod','connect:server:keepalive']);
+	grunt.registerTask('start', ['build','connect:server:keepalive']);
 };

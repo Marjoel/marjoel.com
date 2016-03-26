@@ -3,8 +3,8 @@ module.exports = function(grunt) {
 
 	grunt.config('watch', {
 		index: {
-			files: ['project/index.html'],
-			tasks: ['copy:build_index',
+			files: ['project/*.html'],
+			tasks: ['copy:build_html',
 					'less:build',
 					'replace:build',
 					'purifycss:build',

@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             },
             expand: true,
             cwd: 'dist/',
-            src: ['index.html'],
+            src: ['*.html'],
             dest: 'dist/'
 		}
     });
