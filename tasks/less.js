@@ -15,10 +15,10 @@ module.exports = function(grunt) {
 					'project/assets/bower_components/bootstrap/less/bootstrap.less',
 					'project/assets/bower_components/font-awesome/less/font-awesome.less',
 					'project/assets/bower_components/roboto-fontface/css/roboto-fontface.less',
-					'project/assets/css/components/base/variables.less',
-					'project/assets/css/components/base/base.less',
-					'project/assets/css/components/elements/*.less',
-					'project/assets/css/components/components/*.less'
+					'project/assets/css/base/variables.less',
+					'project/assets/css/base/base.less',
+					'project/assets/css/elements/*.less',
+					'project/assets/css/components/*.less'
 				]
 			}
 		}

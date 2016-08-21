@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-BR">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<title>Marjoel Moreira | Engenheiro de Software</title>
 		<meta name="author" content="Marjoel Moreira">
 		<meta name="description" content="Engenheiro de Software Front-End no Itaú Unibanco, desenvolvedor front-end, designer, fotógrafo e músico.">
 		<meta name="keywords" content="marjoel, moreira, front-end, webdesign, desenvolvimento, engenharia, software">
 		<meta name="google-site-verification" content="-H36GPFQHe_GKh90WPDvQf_SB8a5UqxydocWtRmLbx4" />
-		<meta property="og:title" content="Marjoel Moreira | Software Engineer" />
+		<link rel="image_src" href="https://www.marjoel.com/assets/images/marjoel-logo.jpg" />
+		<link rel="shortcut icon" href="https://www.marjoel.com/assets/images/favicon.png" />
+		
+		<!-- facebook -->
+		<meta property="og:title" content="Marjoel Moreira | Engenheiro de Software" />
+		<meta property="og:description" content="Engenheiro de Software Front-End no Itaú Unibanco, desenvolvedor front-end, designer, fotógrafo e músico." />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://www.marjoel.com" />
-		<meta property="og:image" content="/assets/images/marjoel-logo.jpg" />
+		<meta property="og:url" content="https://www.marjoel.com" />
+		<meta property="og:image" content="https://www.marjoel.com/assets/images/marjoel-logo.jpg" />
+		
+		<!-- twitter -->
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@MarjoelM" />
-		<meta name="twitter:title" content="Marjoel Moreira | Software Engineer" />
+		<meta name="twitter:title" content="Marjoel Moreira | Engenheiro de Software" />
 		<meta name="twitter:description" content="Engenheiro de Software Front-End no Itaú Unibanco, desenvolvedor front-end, designer, fotógrafo e músico." />
-		<meta name="twitter:image" content="/assets/images/marjoel-logo.jpg" />
-		<link rel="shortcut icon" href="/assets/images/favicon.png" />
+		<meta name="twitter:image" content="https://www.marjoel.com/assets/images/marjoel-logo.jpg" />
+		
+		<!-- styles -->
 		<link rel="stylesheet" type="text/css" href="/assets/css/styles.min.css" />
 	</head>
 
-	<body class="pt" itemscope itemtype="http://schema.org/Person http://data-vocabulary.org/Person"> 
+	<body itemscope itemtype="http://schema.org/Person http://data-vocabulary.org/Person">
 		<section id="profile" class="col-xs-12 col-sm-4 col-md-4">
 			<div class="row">
 				<div class="content"> 
@@ -30,10 +39,17 @@
 						<img src="/assets/images/marjoel-profile.jpg" alt="Marjoel Moreira" itemprop="image">
 					</div>
 
+					<div class="social">
+						<div class="facebook">
+							<div id="fb-root"></div>
+							<div class="fb-like" data-href="https://www.marjoel.com" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+						</div>
+					</div>
+
 					<div class="information animated fadeIn">
 						<h1 itemprop="name">Marjoel Moreira</h1>
 						<h2 itemprop="title">Engenheiro de Software Front-End</h2>
-						<p><span itemprop="nationality">Brasileiro</span>, Solteiro, 23 anos</p>
+						<p><span itemprop="nationality">Brasileiro</span>, Solteiro, 24 anos</p>
 						<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<span itemprop="addressLocality locality">São Paulo</span> / <span itemprop="addressRegion region">SP</span> - Brasil
 						</p>
@@ -44,16 +60,18 @@
 							<li><a data-toggle="modal" data-target="#phone"><i class="fa fa-whatsapp"></i></a></li>
 							<li><a data-toggle="modal" data-target="#email"><i class="fa fa-at"></i></a></li>
 							<li><a data-toggle="modal" data-target="#skype"><i class="fa fa-skype"></i></a></li>
-							<li><a data-toggle="modal" data-target="#facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a data-toggle="modal" data-target="#linkedin"><i class="fa fa-linkedin"></i></a></li>
-							<li><a data-toggle="modal" data-target="#twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a data-toggle="modal" data-target="#github"><i class="fa fa-github-alt"></i></a></li>
+							<li><a href="http://facebook.marjoel.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="http://linkedin.marjoel.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="http://twitter.marjoel.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="http://github.marjoel.com" target="_blank"><i class="fa fa-github-alt"></i></a></li>
 							<li class="hide"><a href="https://plus.google.com/111081285350000911385" rel="author">Google Plus</a></li>
 						</ul>
 					</nav>
 
-					<div class="social twitter">
-						<a href="https://twitter.com/MarjoelM" class="twitter-follow-button" lang="pt" data-show-count="true"></a>
+					<div class="social">
+						<div class="twitter">
+							<a href="https://twitter.com/MarjoelM" class="twitter-follow-button" lang="pt" data-show-count="true"></a>
+						</div>
 					</div>
 					
 					<div class="idioms">
@@ -96,7 +114,7 @@
 							<h3>Engenheiro de Software Front-End</h3>
 							<small>jan/14 até o momento</small>
 
-							<p>Planejamento de projetos, análise de sistemas, análise de requisitos de negócio, desenvolvimento de requisitos de negócios, especificação técnica e funcional, relacionamento com fornecedores, testes unitários, e desenvolvimento front-end utilizando HTML5, CSS3, JavaScript, AngularJS, Atomic Design, SMACSS, Git, NPM, Grunt, Bower, Stylus, Jasmine, Karma, BrowserSync, CodeStyle, Slack, Bitbucket, and Jira.</p>
+							<p>Planejamento de projetos, análise de sistemas, análise de requisitos de negócio, desenvolvimento de requisitos de negócios, especificação técnica e funcional, relacionamento com fornecedores, testes unitários, e desenvolvimento front-end utilizando HTML5, CSS3, JavaScript, AngularJS, Atomic Design, SMACSS, Git, NPM, Grunt, Bower, Stylus, Jasmine, Karma, BrowserSync, CodeStyle, RESTful APIs, Jenkins, Slack, Bitbucket, Jira.</p>
 							<p>Projetos envolvidos com pagamentos mobile, pagamentos e-commerce e pagamentos digitais no geral sempre utilizando metologias ágeis.</p>
 						</blockquote>
 
@@ -285,6 +303,7 @@
 						<blockquote>
 							<h2>2016</h2>
 							<ul>
+								<li>A Importância dos Testes Unitários <small>Concret Solutions</small></li>
 								<li>Workshop de Produtividade Utilizando Lego <small>CI&amp;T</small></li>
 								<li>Normalizando a Complexidade de um Software <small>CI&amp;T</small></li>
 								<li>O Mindset Ágil <small>Itaú Unibanco S.A.</small></li>
@@ -376,7 +395,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<div id="phone" class= "modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -389,7 +408,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div id="email" class= "modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -402,7 +421,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div id="skype" class= "modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -411,58 +430,6 @@
 					</div> 
 					<div class="modal-body">
 						<a href="skype:MarjoelM?chat"><i class="fa fa-skype"></i>MarjoelM<i class="fa fa-external-link"></i></a> 
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="facebook" class= "modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-					</div> 
-					<div class="modal-body">
-						<a href="http://facebook.marjoel.com/" target="_blank"><i class="fa fa-facebook"></i>/MarjoelM<i class="fa fa-external-link"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="linkedin" class= "modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-					</div> 
-					<div class="modal-body">
-						<a href="http://linkedin.marjoel.com/" target="_blank"><i class="fa fa-linkedin"></i>/Marjoel<i class="fa fa-external-link"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="twitter" class= "modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-					</div> 
-					<div class="modal-body">
-						<a href="http://twitter.marjoel.com/" target="_blank"><i class="fa fa-twitter"></i>@MarjoelM<i class="fa fa-external-link"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="github" class= "modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-					</div> 
-					<div class="modal-body">
-						<a href="http://github.marjoel.com/" target="_blank"><i class="fa fa-github"></i>/Marjoel<i class="fa fa-external-link"></i></a>
 					</div>
 				</div>
 			</div>
