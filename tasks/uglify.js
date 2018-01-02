@@ -5,9 +5,9 @@ module.exports = function(grunt) {
     	build: {
 			files: [{
 				'dist/assets/js/scripts.min.js': [
-					'project/assets/bower_components/jquery/dist/jquery.min.js',
-					'project/assets/bower_components/bootstrap/js/transition.js',
-					'project/assets/bower_components/bootstrap/js/modal.js',
+					'project/assets/vendor/jquery/dist/jquery.min.js',
+					'project/assets/vendor/bootstrap/js/transition.js',
+					'project/assets/vendor/bootstrap/js/modal.js',
 					'project/assets/js/*.js'
 				]
 			}]

@@ -11,10 +11,10 @@ module.exports = function(grunt) {
 			},
 			files: {
 				'dist/assets/css/styles.min.css': [
-					'project/assets/bower_components/sanitize-css/dist/sanitize.min.css',
-					'project/assets/bower_components/bootstrap/less/bootstrap.less',
-					'project/assets/bower_components/font-awesome/less/font-awesome.less',
-					'project/assets/bower_components/roboto-fontface/css/roboto-fontface.less',
+					'project/assets/vendor/sanitize-css/dist/sanitize.min.css',
+					'project/assets/vendor/bootstrap/less/bootstrap.less',
+					'project/assets/vendor/font-awesome/less/font-awesome.less',
+					'project/assets/vendor/roboto-fontface/css/roboto-fontface.less',
 					'project/assets/css/base/variables.less',
 					'project/assets/css/base/base.less',
 					'project/assets/css/elements/*.less',

@@ -1,3 +1,4 @@
 {
-	"directory": "project/assets/bower_components"
+	"directory": "project/assets/vendor",
+    "timeout": 300000
 }

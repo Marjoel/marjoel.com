@@ -19,13 +19,13 @@ module.exports = function(grunt) {
 			},
 			{
 				expand: true,
-				cwd: 'project/assets/bower_components/font-awesome/fonts',
+				cwd: 'project/assets/vendor/font-awesome/fonts',
 				src : ['*.*'],
 				dest: 'dist/assets/fonts/font-awesome/'
 			},
 			{
 				expand: true,
-				cwd: 'project/assets/bower_components/roboto-fontface/fonts',
+				cwd: 'project/assets/vendor/roboto-fontface/fonts',
 				src : ['*.*'],
 				dest: 'dist/assets/fonts/font-roboto/'
 			}]
